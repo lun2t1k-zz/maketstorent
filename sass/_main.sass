@@ -1,0 +1,126 @@
+.main
+  display: flex
+  justify-content: space-between
+  &-column
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &_1
+      margin-right: 129px
+  &-info
+    &__title
+      text-align: left
+      margin-top: 20px
+      margin-bottom: 58px
+    &__subtitle
+      color: #fff
+      font-size: 20px
+      font-weight: 300
+      margin-top: 0
+      margin-bottom: 61px
+    &__features
+      display: flex
+    &__block
+      display: flex
+      align-items: center
+      vertical-align: middle
+      margin-bottom: 64px
+      &_last
+        margin-bottom: 0
+    &__logo
+      display: flex
+      justify-content: center
+      width: 30px
+      margin-right: 38px
+    &__text
+      width: 200px
+      color: #fff
+      font-size: 15px
+      font-weight: 300
+      line-height: 20px
+      margin: 0
+
+  &-form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    background-color: #fff
+    color: $form-text-color
+    padding: 39px 49px
+    &__textarea
+      width: 260px
+      font-family: "Proxima Nova"
+      color: #7c7c7c
+      font-size: 13px
+      font-weight: 300
+      padding-top: 20px
+      padding-bottom: 59px
+    .form
+      &__title
+        font-size: 18px
+        font-weight: 400
+        margin-top: 0
+        margin-bottom: 30px
+      &__button
+        margin-bottom: 20px
+      &__text
+        &_small
+          font-size: 11px
+          font-weight: 300
+          margin: 0
+          .data-processing-policy
+            color: $form-text-color
+            &:hover
+              color: $link-color
+    &__input
+      margin-bottom: 10px
+      &_last
+        margin-bottom: 20px
+
+@media screen and ( max-width: 1140px )
+  .main
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &-column
+      &_1
+        margin-right: 0
+    &-info
+      &__title
+        text-align: center
+        margin-bottom: 50px
+      &__subtitle
+        text-align: center
+        margin-bottom: 30px
+      &__features
+        justify-content: space-around
+        margin-bottom: 20px
+
+@media screen and ( max-width: 768px )
+  .main
+    &-info
+      &__subtitle
+        font-size: 16px
+      &__text
+        font-size: 12px
+    &-form
+      &__textarea
+        font-size: 10px
+
+@media screen and ( max-width: 576px )
+  .main
+    &-column
+      justify-content: center
+    &-info
+      &__features
+        align-items: center
+        justify-content: center
+        flex-direction: column
+      &__block
+        margin-bottom: 20px
+      &__text
+        width: 154px
+    &-form
+      padding: 20px 25px

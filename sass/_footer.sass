@@ -1,0 +1,28 @@
+.footer
+  background-color: #191919
+  padding-top: 20px
+  padding-bottom: 8px
+  .header
+    &-sections
+      display: flex
+      .header-section
+        margin-left: 120px
+  .header-info
+    margin: 0
+
+@media screen and ( max-width: 992px )
+  .footer
+    .header
+      &-info
+        flex-direction: column
+        justify-content: center
+      &-sections
+        justify-content: center
+        flex-direction: column
+        margin-top: 20px
+        .header-section
+          display: flex
+          margin-left: 0
+          margin-bottom: 20px
+          &__links
+            align-items: center

@@ -1,0 +1,43 @@
+.order
+  background: #000 url(../img/order/order-bg.png) center no-repeat
+  background-size: cover
+  overflow: hidden
+  padding-top: 100px
+  padding-bottom: 100px
+  &-title
+    color: #fff
+    margin-bottom: 132px
+  &-options
+    display: flex
+    justify-content: space-around
+  &-block
+    display: flex
+    flex-direction: column
+    text-align: center
+    justify-content: start
+    color: #fff
+    &__img
+      margin-bottom: 38px
+    &__descr
+      font-size: 16px
+      font-weight: 300
+      line-height: 22px
+      margin-top: 0
+      margin-bottom: 0
+    .header-link
+      margin-top: 25px
+
+@media screen and ( max-width: 768px )
+  .order
+    padding-top: 40px
+    padding-bottom: 10px
+    &-title
+      margin-bottom: 20px
+    &-options
+      flex-direction: column
+    &-block
+      margin-bottom: 30px
+      &__img
+        margin-bottom: 15px
+      .header-link
+        margin-top: 10px

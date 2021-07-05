@@ -1,0 +1,19 @@
+.layout
+  position: relative
+  &::before
+    position: absolute
+    content: ''
+    background: url(../img/options/layout/lego-3.png) center no-repeat
+    width: 401px
+    height: 298px
+    top: -7%
+    right: 8%
+
+@media screen and ( max-width: 1400px )
+  .layout
+    &::before
+      right: 3%
+@media screen and ( max-width: 1140px )
+  .layout
+    &::before
+      display: none

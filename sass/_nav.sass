@@ -1,0 +1,84 @@
+.nav
+  margin-bottom: 102px
+  .close-button
+    display: none
+  &-menu
+    display: flex
+    justify-content: space-around
+    position: relative
+    padding: 0
+    margin: 0
+    &::after
+      content: ''
+      position: absolute
+      top: 36px
+      left: 0
+      width: 100%
+      height: 1px
+      background-color: #ffffff
+      opacity: 0.2
+    &::before
+      content: ''
+      position: absolute
+      top: -17px
+      left: 0
+      width: 100%
+      height: 1px
+      background-color: #ffffff
+      opacity: 0.2
+    &__item
+      list-style: none
+    &__link
+      color: #fff
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 13px
+      font-weight: 400
+      &:hover
+        color: $link-color
+        text-decoration: underline
+
+@media screen and ( max-width: 1140px )
+  .nav
+    margin-bottom: 50px
+
+@media screen and ( max-width: 768px )
+  .nav
+    display: flex
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #fff
+    text-align: center
+    justify-content: center
+    z-index: 99
+    transform: translateX(-100%)
+    transition: transform 0.2s
+    .close-button
+      display: block
+      position: absolute
+      top: 25%
+      right: 20%
+      background-color: transparent
+      border: 2px solid $link-color
+      border-radius: 5px
+      color: $link-color
+      width: 25px
+      height: 25px
+      outline: 0 none !important
+      z-index: 100
+    &-menu
+      flex-direction: column
+      &::after
+        display: none
+      &::before
+        display: none
+      &__item
+        margin-bottom: 15px
+      &__link
+        color: $form-text-color
+    .is-open
+      transform: translateX(0%)
+      transition: transform 0.2s

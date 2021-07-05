@@ -1,0 +1,20 @@
+.tools
+  background-color: #f9f9f9
+  position: relative
+  &::before
+    position: absolute
+    content: ''
+    background: url(../img/options/tools/lego-2.png) center no-repeat
+    width: 333px
+    height: 356px
+    top: -13%
+    left: 7%
+
+@media screen and ( max-width: 1400px )
+  .tools
+    &::before
+      left: 0%
+@media screen and ( max-width: 1140px )
+  .tools
+    &::before
+      display: none

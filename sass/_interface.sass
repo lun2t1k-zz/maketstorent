@@ -1,0 +1,101 @@
+$link-color: #00d1f9
+$button-color: #23bac1
+$form-text-color: #7c7c7c
+
+.main-container
+  max-width: 1140px
+  width: 90%
+  margin: 0 auto
+
+.section
+  &-title
+    position: relative
+    font-size: 36px
+    font-weight: 400
+    text-align: center
+    margin-top: 0
+    margin-bottom: 135px
+    &_black
+      color: #000000
+      &::after
+        content: ''
+        position: absolute
+        top: 54px
+        left: 49%
+        width: 31px
+        height: 2px
+        background-color: $button-color
+    &_white
+      color: #ffffff
+
+.form
+  &__input
+    width: 260px
+    color: #7c7c7c
+    font-family: "Proxima Nova", sans-serif
+    text-align: center
+    font-size: 13px
+    font-weight: 300
+    padding-top: 20px
+    padding-bottom: 20px
+
+.button
+  background-color: $button-color
+  box-shadow: 0 6px 18px rgba(28, 167, 173, 0.32)
+  color: #fff
+  font-family: "Proxima Nova", sans-serif
+  font-size: 13px
+  font-weight: 700
+  text-align: center
+  text-transform: uppercase
+  border: 1px solid transparent
+  padding: 22px 32px
+  &__logo
+    margin-right: 19px
+  &:hover
+    background-color: transparent
+    color: $button-color
+    border: 1px solid $button-color
+    transition: background-color 0.4s ease
+  &-o
+    display: flex
+    background-color: transparent
+    box-shadow: none
+    color: $button-color
+    border: 1px solid $button-color
+    align-items: center
+    padding: 23px 56px
+    margin-right: auto
+    margin-left: auto
+    &:hover
+      background-color: $button-color
+      color: #fff
+      box-shadow: 0 6px 18px rgba(28, 167, 173, 0.32)
+      border: 1px solid $button-color
+      transition: background-color 0.4s ease
+      .button__logo
+        display: none
+
+@media screen and ( max-width: 768px )
+  .section
+    &-title
+      font-size: 24px
+      margin-bottom: 20px
+      &_black
+        &::after
+          display: none
+
+  .button
+    font-size: 10px
+    padding: 11px 16px
+    &-o
+      padding: 12px 28px
+
+  .form
+    &__input
+      font-size: 10px
+
+@media screen and ( max-width: 576px )
+  .section
+    &-title
+      font-size: 18px
