@@ -56,6 +56,9 @@
     z-index: 99
     transform: translateX(-100%)
     transition: transform 0.2s
+    .is-open
+      transform: translateX(0%)
+      transition: transform 0.2s
     .close-button
       display: block
       position: absolute
@@ -79,6 +82,3 @@
         margin-bottom: 15px
       &__link
         color: $form-text-color
-    .is-open
-      transform: translateX(0%)
-      transition: transform 0.2s
