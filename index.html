@@ -21,9 +21,9 @@
   <header class="header">
     <div class="main-container">
       <div class="header-info">
-        <button class="menu-button">
+        <a href="#" class="menu-button">
           <img src="img/header/menu.png" alt="menu">
-        </button>
+        </a>
 
         <div class="header-logo">
           <a href="index.html">
@@ -53,42 +53,42 @@
       </div>
       <!-- /.header-info -->
       
-      <nav class="nav">
-        <button class="close-button">
-          <span class="close-button-text">&times;</span>
-        </button>
+      <div class="navbar">
+        <a href="#" class="close-button">&times;</a>
 
-        <ul class="nav-menu">
-          <li class="nav-menu__item">
-            <a href="#materials" class="nav-menu__link">Материалы</a>
-          </li>
-      
-          <li class="nav-menu__item">
-            <a href="#tools" class="nav-menu__link">Инструменты</a>
-          </li>
-      
-          <li class="nav-menu__item">
-            <a href="#layout" class="nav-menu__link">Макетирование</a>
-          </li>
-      
-          <li class="nav-menu__item">
-            <a href="#delivery" class="nav-menu__link">Доставка</a>
-          </li>
-      
-          <li class="nav-menu__item">
-            <a href="#main" class="nav-menu__link">О нас</a>
-          </li>
-      
-          <li class="nav-menu__item">
-            <a href="#order" class="nav-menu__link">Как заказать</a>
-          </li>
-      
-          <li class="nav-menu__item">
-            <a href="#contacts" class="nav-menu__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.nav -->
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#materials" class="menu__link">Материалы</a>
+            </li>
+        
+            <li class="menu__item">
+              <a href="#tools" class="menu__link">Инструменты</a>
+            </li>
+        
+            <li class="menu__item">
+              <a href="#layout" class="menu__link">Макетирование</a>
+            </li>
+        
+            <li class="menu__item">
+              <a href="#delivery" class="menu__link">Доставка</a>
+            </li>
+        
+            <li class="menu__item">
+              <a href="#main" class="menu__link">О нас</a>
+            </li>
+        
+            <li class="menu__item">
+              <a href="#order" class="menu__link">Как заказать</a>
+            </li>
+        
+            <li class="menu__item">
+              <a href="#contacts" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.navbar -->
 
       <section class="main" id="main">
         <div class="main-info">
@@ -938,7 +938,7 @@
       });
     });
   </script>
-  <script src="js/menu.js" defer></script>
-  <script src="js/script.js" defer></script>
+  <script src="js/menu.js" async></script>
+  <script src="js/script.js" async></script>
 </body>
 </html>
